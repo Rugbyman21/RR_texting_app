@@ -2,17 +2,18 @@
 http_interactions:
 - request:
     method: post
-    uri: https://ACb1bb1ac98be2db85f4317a9078b8b94b:95df1b68ee80c8a6b2cdababd8c8152d@api.twilio.com/2010-04-01/Accounts/ACb1bb1ac98be2db85f4317a9078b8b94b/Messages.json
+    uri: https://<twilio account sid>:<twilio auth token>@api.twilio.com/2010-04-01/Accounts/<twilio
+      account sid>/Messages.json
     body:
       encoding: US-ASCII
-      string: Body=hi&From=5034558610&To=111111
+      string: Body=hi&From=%2B15034558610&To=1111111
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
-      - '33'
+      - '38'
       Content-Type:
       - application/x-www-form-urlencoded
       User-Agent:
@@ -36,24 +37,24 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 03 Nov 2015 00:27:54 GMT
+      - Tue, 03 Nov 2015 21:20:59 GMT
       Twilio-Request-Duration:
-      - '0.203'
+      - '0.166'
       Twilio-Request-Id:
-      - RQ3f1316fe93e94b83a404b13eacbf5f1b
+      - RQcd7d9ba437144b9b88e8a36f460ecda3
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
       - none
       Content-Length:
-      - '153'
+      - '154'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"code": 21211, "message": "The ''To'' number 111111 is not a valid
+      string: '{"code": 21211, "message": "The ''To'' number 1111111 is not a valid
         phone number.", "more_info": "https://www.twilio.com/docs/errors/21211", "status":
         400}'
     http_version: 
-  recorded_at: Tue, 03 Nov 2015 00:27:54 GMT
+  recorded_at: Tue, 03 Nov 2015 21:20:59 GMT
 recorded_with: VCR 3.0.0
